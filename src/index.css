@@ -1,0 +1,30 @@
+/* src/index.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Add your custom styles here */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9f9;
+}
+
+@layer components {
+  .icon-wrapper {
+    @apply border border-gray-300 rounded-full h-[50px] w-[50px] flex items-center justify-center text-white text-3xl;
+  }
+}
+
+
+/* Add this to your CSS or Tailwind CSS configuration */
+.icon-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333; /* Adjust the color as needed */
+}
+
+.icon-link:hover {
+  color: #007bff; /* Change to your desired hover color */
+}
